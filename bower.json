@@ -1,0 +1,23 @@
+{
+  "name": "kapitel2",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alphalbs/kapitel2",
+  "authors": [
+    "Kilian Koeltzsch <koeltzsch@gmail.com>",
+    "Philipp Heisig <github@pheisig.de>"
+  ],
+  "description": "auffangspiel fuer das zweite kapitel",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "phaser": "~2.0.4"
+  }
+}
