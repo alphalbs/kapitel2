@@ -40,14 +40,14 @@ function create() {
 }
 
 function createCounter() {
-    var style = { font: "65px Arial", fill: "#ff0000" };
-    counter_wrong = game.add.text(50, 30, ""+wrong, style);
-    var style = { font: "65px Arial", fill: "#008500" };
-    counter_right = game.add.text(650, 30, ""+right, style);
+    var style_wrong = { font: "65px Arial", fill: "#ff0000" };
+    counter_wrong = game.add.text(50, 30, ""+wrong, style_wrong);
+    var style_right = { font: "65px Arial", fill: "#008500" };
+    counter_right = game.add.text(650, 30, ""+right, style_right);
 }
 
 function createTrash() {
-    var random = game.rnd.integerInRange(200, 560)
+    var random = game.rnd.integerInRange(200, 560);
     trash = trash_group.create(random, 0, 'apfel');
     trashtype = "bio";
     trash.body.gravity.y = 100;
