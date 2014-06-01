@@ -11,14 +11,16 @@ function preload() {
     game.load.image('biomuell_tonne', 'assets/biomuell_tonne.png');
     game.load.image('sondermuell_tonne', 'assets/sondermuell_tonne.png');
 
-    game.load.image('restmuell', 'assets/restmuell.png');
-    game.load.image('papiermuell', 'assets/papiermuell.png');
-    game.load.image('glas', 'assets/glas.png');
-    game.load.image('gelber_sack', 'assets/gelber_sack.png');
-    game.load.image('biomuell', 'assets/biomuell.png');
-    game.load.image('sondermuell', 'assets/sondermuell.png');
+    game.load.image('restmuell', 'assets/restmuell_labeled.png');
+    game.load.image('papiermuell', 'assets/papiermuell_labeled.png');
+    game.load.image('glas', 'assets/glas_labeled.png');
+    game.load.image('gelber_sack', 'assets/gelber_sack_labeled.png');
+    game.load.image('biomuell', 'assets/biomuell_labeled.png');
+    game.load.image('sondermuell', 'assets/sondermuell_labeled.png');
 
     game.load.image('apfel', 'assets/apfel.png');
+
+    game.load.image('background', 'assets/background.jpg');
 }
 
 // Create game screen and wait for input
@@ -26,7 +28,8 @@ function create() {
     right = 0;
     wrong = 0;
     game.physics.startSystem(Phaser.Physics.ARCADE);
-    game.stage.backgroundColor = '#E6E6E6';
+    var background = game.add.sprite(0, 0, 'background');
+    // game.stage.backgroundColor = '#E6E6E6';
 
     createTonne();
     createBorders();
