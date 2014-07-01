@@ -27,8 +27,8 @@ function preload() {
     game.load.image('Laub', 'assets/muell/bio/laub.png');
     game.load.image('Bananenschale', 'assets/muell/bio/bananenschale.png');
 
-    game.load.image('Braunglas', 'assets/muell/glas/braunglas.png');
-    game.load.image('Nutellaglas', 'assets/muell/glas/nutellaglas.png');
+    game.load.image('Glasflasche', 'assets/muell/glas/glasflasche.png');
+    game.load.image('Nutelloglas', 'assets/muell/glas/nutello.png');
     game.load.image('Weinflasche', 'assets/muell/glas/weinflasche.png');
 
     game.load.image('Duschgel', 'assets/muell/gruener_punkt/duschgel.png');
@@ -79,7 +79,7 @@ function create() {
     rest = new Array("Asche","Hundehaufen","Kugelschreiber","Spielzeug");
     papier = new Array("Briefumschlaege","Karton","Zeitung");
     gp = new Array("Konserve","Plastikbeutel","Duschgel","Joghurtbecher","Tetrapack");
-    glas = new Array("Weinflasche","Nutellaglas","Braunglas");
+    glas = new Array("Weinflasche","Nutelloglas","Glasflasche");
     bio = new Array("Apfel","Teebeutel","Laub","Gemuese","Bananenschale","Brot","Fischgraete");
     sonder = new Array("Batterie","Energiesparlampe");
 
