@@ -1,6 +1,7 @@
 // Initialize Phaser
 var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game_div', {preload: preload, create: create, update: update});
 var block, trash, right, wrong, counter_wrong, counter_right, trashtype, act_tonne, active, game_length, speed, missed, mistakes, trashname, mistake_count;
+var percentage = 0;
 
 // Load assets
 function preload() {
@@ -97,7 +98,7 @@ function createCounter() {
 
 function createTrash() {
     var random1 = game.rnd.integerInRange(0, 5);
-    var random2 = game.rnd.integerInRange(200, 560);
+    var random2 = game.rnd.integerInRange(200, 536);
     switch(random1) {
         case 0:
             var random3 = game.rnd.integerInRange(0, rest.length - 1);
@@ -210,6 +211,7 @@ function showResult() {
     }
     style = { font: "30px Arial", fill: "#FF0000" };
     text = game.add.text(520, 470, Math.round((right/game_length)*100)+" %", style);
+    percentage = Math.round((right/game_length)*100);
 }
 
 function createTonne() {
